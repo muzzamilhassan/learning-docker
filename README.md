@@ -11,11 +11,9 @@ learning-docker/
 │── src/ # Source code (TypeScript)
 │── dist/ # Compiled JavaScript (after build)
 │── Dockerfile # Multi-stage Dockerfile
-│── docker-compose.yml (optional)
+│── docker-compose.yml # (optional)
 │── package.json
 │── tsconfig.json
-
-
 
 ---
 
