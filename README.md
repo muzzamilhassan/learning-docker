@@ -6,17 +6,16 @@ It demonstrates how to use **multi-stage builds**, **volumes**, and **Docker Com
 ---
 
 ## 📂 Project Structure
+
 learning-docker/
 │── src/ # Source code (TypeScript)
-
-│── dist/ # Compiled JavaScript (after build) 
+│── dist/ # Compiled JavaScript (after build)
 │── Dockerfile # Multi-stage Dockerfile
 │── docker-compose.yml (optional)
 │── package.json
 │── tsconfig.json
 
-yaml
-Copy code
+
 
 ---
 
@@ -27,41 +26,42 @@ npm run build
 
 # Start app (after build)
 npm start
-🐳 Run with Docker
+
+
 1. Build the image
-bash
-Copy code
 docker build -t my-node-app .
+
 2. Run the container
-bash
-Copy code
 docker run -d -p 3000:3000 --name=node_app my-node-app
 ➡️ App will be available at http://localhost:3000
 
+
 📦 Run with Docker Compose (Optional)
+
 If you have a database (like Postgres) and want to run everything together, use Docker Compose.
 
-bash
-Copy code
 docker compose up
+
 This will start:
 
 app → Node.js app
 
 db → Postgres database
 
+
 🗄️ Volumes
+
 This project demonstrates Docker volumes:
 
 Keeps database data even if the container stops.
 
 Example in docker-compose.yml:
 
-yaml
-Copy code
 volumes:
   dbdata:
+
 🔥 Features
+
 TypeScript support
 
 Express server
@@ -73,6 +73,7 @@ Production-ready Docker image
 Example Docker Compose for multi-service apps
 
 📖 Learning Goals
+
 Understand Dockerfiles (base, builder, runner).
 
 Use Docker volumes for persistence.
@@ -82,5 +83,6 @@ Learn Docker networking.
 Run multi-container apps with Docker Compose.
 
 👨‍💻 Author
+
 Muzzamil Hassan
 Learning Docker, Node.js & DevOps 🚀
