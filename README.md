@@ -8,14 +8,13 @@ It demonstrates how to use **multi-stage builds**, **volumes**, and **Docker Com
 ## 📂 Project Structure
 
 learning-docker/
-│── src/ # Source code (TypeScript)
-│── dist/ # Compiled JavaScript (after build)
-│── Dockerfile # Multi-stage Dockerfile
-│── docker-compose.yml # (optional)
-│── package.json
-│── tsconfig.json
+├── 📦 src/               # Source code (TypeScript)
+├── 🏗️ dist/              # Compiled JavaScript (after build)
+├── 🐳 Dockerfile         # Multi-stage Dockerfile
+├── ⚙️ docker-compose.yml # (optional)
+├── 📜 package.json
+└── 📘 tsconfig.json
 
----
 
 ## ⚡ Scripts
 ```bash
